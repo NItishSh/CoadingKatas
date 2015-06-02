@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Coding.Kata01.Library
 {
@@ -10,7 +6,12 @@ namespace Coding.Kata01.Library
     {
         public string Title { get; set; }
         public string Author { get; set; }
-        public string ISBN { get; set; }
-        public List<IBookCategory> Categories { get; set; } 
+        public string Isbn { get; set; }
+        public List<string> Categories { get; set; }
+
+        public Book()
+        {
+            Categories = new List<string>();
+        }
     }
 }
